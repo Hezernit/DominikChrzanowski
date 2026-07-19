@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IT Warehouse Desktop: a C# WinForms inventory app by Dominik Chrzanowski.">
+  <link rel="stylesheet" href="style.css">
+  <title>IT Warehouse Desktop | Dominik Chrzanowski</title>
+</head>
+<body>
+  <nav class="topbar" aria-label="Main navigation">
+    <a class="brand" href="index.html">DC</a>
+    <div class="nav-links">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero subpage-hero">
+    <div class="hero-copy">
+      <p class="eyebrow">C# • WinForms • SQLite</p>
+      <h1>IT Warehouse Desktop</h1>
+      <p class="lead">
+        A desktop inventory system for tracking IT assets, assignments, statuses and change history.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="downloads/ITWarehouseDesktop.zip" download>Download app</a>
+        <a class="button secondary" href="index.html">Back to homepage</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section content-stack">
+    <article class="card">
+      <h2>Project overview</h2>
+      <p>
+        IT Warehouse Desktop is a Windows desktop application built with C# and WinForms on .NET. It uses a local
+        SQLite database to manage hardware inventory records, users, permissions and audit logs.
+      </p>
+      <p>
+        The app focuses on everyday warehouse work: quick asset lookup, issuing and returning devices, service status,
+        reservations, archiving records and keeping a clear history of changes.
+      </p>
+    </article>
+
+    <article class="card">
+      <h2>Key features</h2>
+      <div class="skill-cloud">
+        <span>Login and roles</span>
+        <span>Asset database</span>
+        <span>Quick scan/search</span>
+        <span>Audit history</span>
+        <span>CSV import/export</span>
+        <span>Database backup</span>
+        <span>SQLite storage</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2>How to run the app</h2>
+      <ol class="steps-list">
+        <li>Download the ZIP file using the button above.</li>
+        <li>Extract the whole ZIP archive to any folder on your Windows computer.</li>
+        <li>Open the extracted folder and run <strong>ITWarehouseDesktop.exe</strong>.</li>
+        <li>If Windows shows a SmartScreen warning, choose <strong>More info</strong> and then <strong>Run anyway</strong>.</li>
+      </ol>
+      <p>
+        Keep all extracted files together, including the SQLite database and DLL files, because the application needs them
+        to start correctly.
+      </p>
+    </article>
+
+    <article class="card">
+      <h2>Tech stack</h2>
+      <p>
+        The project is written in C# using Windows Forms, targets .NET for Windows, and stores data with
+        Microsoft.Data.Sqlite. It includes separate application models, database handling and login/main form flows.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="downloads/ITWarehouseDesktop.zip" download>Download ZIP</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 Dominik Chrzanowski. All rights reserved.
+  </footer>
+</body>
+</html>

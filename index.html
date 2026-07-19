@@ -1,54 +1,156 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dominik Chrzanowski's portfolio: programming, electronics, network projects and Arduino.">
   <link rel="stylesheet" href="style.css">
-  <title>Dominik Chrzanowski</title>
+  <title>Dominik Chrzanowski | Portfolio</title>
 </head>
 <body>
-  <header>
-  <img src="zdj.jpg" alt="Dominik Chrzanowski" >
-  <h1>Dominik Chrzanowski</h1>
-  <p>Coder • Creator • Technology Enthusiast • Math lover</p>
-</header>
+  <nav class="topbar" aria-label="Main navigation">
+    <a class="brand" href="index.html">DC</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-  <section>
-    <div class="card">
-      <h2>About me</h2>
-      <p>Hello! My name is Dominik I'm 22 years old and I'm from Poland — I'm passionate about creating websites, applications, and meaningful solutions.
-        I love learning new technologies and sharing knowledge.
-        My Goal is to become a programmer in ... And that's the point... 
-        I'm still discovering myself in this colorful area.
-        It is fascinating to discover IT from scratch using C++,C,creating your own electronic circuts but also finding out what the
-        latest programming modules for programing languages like for instance: Python,JavaScript or PHP have to offer all over their 
-        abstraction level making it to create wonderfull apps or features. That's why I chose IT studies at Programming speciality where
-        I discover both worlds of high and low level coding. On this website you can find my Projects,Latest ideas/thoughts and Contact info.
+  <header class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Coder • Creator • Technology Enthusiast • Math lover</p>
+      <h1>Dominik Chrzanowski</h1>
+      <p class="lead">
+        I discover IT from both sides: low-level logic, electronics, networks and modern web development.
       </p>
+      <div class="hero-actions" aria-label="Main actions">
+        <a class="button primary" href="#projects">View projects</a>
+        <a class="button secondary" href="mailto:dominikstudia12@gmail.com">Contact me</a>
+      </div>
     </div>
+    <div class="portrait-wrap">
+      <img src="zdj.jpg" alt="Dominik Chrzanowski">
+    </div>
+  </header>
 
-    <div class="card">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Testsite.github.io</strong> — moja strona testowa na GitHub Pages</li>
-        <li><strong><a href="Simple Network plan for medium sized enterpise.html" target="_blank">Simple Network plan for medium sized enterpise</a></strong> 
-</li>
-        <li><strong>Blog</strong> — moje przemyślenia o kodzie i życiu(w trakcie tworzenia)</li>
-        <li><strong>Gra nanonaut</strong> — Prosta gra stworzona na podstawie książki CoderDojo - Baw się kodem(w trakcie tworzenia)</li>
-        <li><strong><a href="Arduino Adventure.html" target="_blank">Arduino Adventure</a></strong> 
-</li>
-      </ul>
-    </div>
+  <main>
+    <section id="about" class="section about-grid">
+      <div>
+        <p class="section-label">About me</p>
+        <h2>I build, test and learn through practice.</h2>
+      </div>
+      <div class="card">
+        <p>
+          Hello! My name is Dominik, I'm 22 years old and I'm from Poland. I'm passionate about creating websites,
+          applications and meaningful solutions. I love learning new technologies and sharing knowledge.
+        </p>
+        <p>
+          My goal is to become a programmer, and that's the point: I'm still discovering myself in this colorful area.
+          It is fascinating to discover IT from scratch using C, C++, creating your own electronic circuits, but also
+          finding out what the latest programming modules for languages like Python, JavaScript or PHP have to offer.
+        </p>
+        <p>
+          That's why I chose IT studies with a programming specialty, where I discover both worlds of high and low level
+          coding. On this website you can find my projects, latest ideas, thoughts and contact info.
+        </p>
+        <div class="skill-cloud" aria-label="Technologies and areas">
+          <span>C++</span>
+          <span>C</span>
+          <span>Python</span>
+          <span>JavaScript</span>
+          <span>PHP</span>
+          <span>Arduino</span>
+          <span>Networking</span>
+        </div>
+      </div>
+    </section>
 
-    <div class="card">
-      <h2>Contact</h2>
-      <p>📧 dominikstudia12@gmail.com</p>
-      <p>🔗 <a href="https://www.linkedin.com/in/dominik-chrzanowski-278456309/" target="_blank" style ="color: #ffd700;">LinkedIn</a></p>
-    </div>
-  </section>
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="section-label">Projects</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div>
+            <span class="badge">Network</span>
+            <h3>Simple Network plan for medium sized enterprise</h3>
+            <p>
+              A networking project prepared during laboratory classes. It shows practical infrastructure planning and Cisco skills.
+            </p>
+          </div>
+          <a class="text-link" href="Simple Network plan for medium sized enterpise.html" target="_blank" rel="noopener">
+            Open project
+          </a>
+        </article>
+
+        <article class="project-card featured">
+          <div>
+            <span class="badge">Electronics</span>
+            <h3>Arduino Adventure</h3>
+            <p>
+              Documentation of learning electronics, microcontrollers, sensors, servos and small experiments.
+            </p>
+          </div>
+          <a class="text-link" href="Arduino Adventure.html" target="_blank" rel="noopener">Open project</a>
+        </article>
+
+        <article class="project-card featured">
+          <div>
+            <span class="badge">Desktop app</span>
+            <h3>IT Warehouse Desktop</h3>
+            <p>
+              A C# WinForms inventory app for managing IT assets, users, audit history, CSV import/export and local SQLite data.
+            </p>
+          </div>
+          <div class="project-actions">
+            <a class="text-link" href="ITWarehouseDesktop.html" target="_blank" rel="noopener">Open project</a>
+            <a class="text-link" href="downloads/ITWarehouseDesktop.zip" download>Download app</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <span class="badge muted">Live</span>
+            <h3>Testsite.github.io</h3>
+            <p>My test website on GitHub Pages.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <span class="badge muted">In progress</span>
+            <h3>Blog</h3>
+            <p>My thoughts about code and life.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <span class="badge muted">In progress</span>
+            <h3>Gra nanonaut</h3>
+            <p>A simple game created based on the CoderDojo book "Code Your Own Games".</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-band">
+      <div>
+        <p class="section-label">Contact</p>
+      </div>
+      <div class="contact-actions">
+        <a class="button primary" href="mailto:dominikstudia12@gmail.com">dominikstudia12@gmail.com</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/dominik-chrzanowski-278456309/" target="_blank" rel="noopener">
+          LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Dominik Chrzanowski. Wszystkie prawa zastrzeżone.
+    &copy; 2025 Dominik Chrzanowski. All rights reserved.
   </footer>
 </body>
 </html>
