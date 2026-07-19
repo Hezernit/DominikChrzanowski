@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiszki angielskie</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Angielski codziennie</p>
+        <h1>Fiszki</h1>
+      </div>
+      <nav class="top-tabs" aria-label="Nawigacja">
+        <button class="tab-button active" type="button" data-view="study">Nauka</button>
+        <button class="tab-button" type="button" data-view="editor">Słowa</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="view active" id="study-view" aria-labelledby="study-title">
+        <div class="study-layout">
+          <aside class="progress-panel">
+            <p class="eyebrow">Zestaw</p>
+            <h2 id="study-title">Twoja karta</h2>
+            <p id="deck-status">0 słów</p>
+            <div class="controls">
+              <button class="icon-button" id="prev-card" type="button" aria-label="Poprzednia karta">‹</button>
+              <button class="primary-button" id="shuffle-cards" type="button">Losuj</button>
+              <button class="icon-button" id="next-card" type="button" aria-label="Następna karta">›</button>
+            </div>
+          </aside>
+
+          <div class="flashcard-stage">
+            <button class="flashcard" id="flashcard" type="button" aria-label="Obróć fiszkę">
+              <span class="flashcard-inner">
+                <span class="flashcard-face flashcard-front">
+                  <span class="card-kicker">Angielski</span>
+                  <strong id="card-word">Dodaj pierwsze słowo</strong>
+                  <span class="card-hint">Kliknij kartę, aby zobaczyć tłumaczenie</span>
+                </span>
+                <span class="flashcard-face flashcard-back">
+                  <span class="card-kicker">Tłumaczenie</span>
+                  <strong id="card-translation">Przejdź do zakładki Słowa</strong>
+                  <span id="card-example" class="card-example"></span>
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="editor-view" aria-labelledby="editor-title">
+        <div class="editor-shell">
+          <form class="word-form" id="word-form">
+            <div>
+              <p class="eyebrow">Edycja</p>
+              <h2 id="editor-title">Dodaj lub zmień fiszkę</h2>
+            </div>
+            <input type="hidden" id="word-id" />
+            <label>
+              Słowo po angielsku
+              <input id="word-input" type="text" autocomplete="off" required />
+            </label>
+            <label>
+              Tłumaczenie
+              <input id="translation-input" type="text" autocomplete="off" required />
+            </label>
+            <label>
+              Przykładowe zdanie
+              <textarea id="example-input" rows="4"></textarea>
+            </label>
+            <div class="form-actions">
+              <button class="primary-button" type="submit">Zapisz fiszkę</button>
+              <button class="secondary-button" id="clear-form" type="button">Wyczyść</button>
+            </div>
+          </form>
+
+          <section class="word-list-section" aria-labelledby="list-title">
+            <div class="list-header">
+              <div>
+                <p class="eyebrow">Lista</p>
+                <h2 id="list-title">Twoje słowa</h2>
+              </div>
+              <span id="word-count">0</span>
+            </div>
+            <div class="word-list" id="word-list"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

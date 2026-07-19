@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="English Flashcards: a browser-based vocabulary learning app by Dominik Chrzanowski.">
+  <link rel="stylesheet" href="style.css">
+  <title>English Flashcards | Dominik Chrzanowski</title>
+</head>
+<body>
+  <nav class="topbar" aria-label="Main navigation">
+    <a class="brand" href="index.html">DC</a>
+    <div class="nav-links">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero subpage-hero">
+    <div class="hero-copy">
+      <p class="eyebrow">HTML • CSS • JavaScript</p>
+      <h1>English Flashcards</h1>
+      <p class="lead">
+        A lightweight browser app for studying English vocabulary with flip cards and a built-in word editor.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="projects/fiszki/index.html" target="_blank" rel="noopener">Open live demo</a>
+        <a class="button secondary" href="downloads/fiszki-source.zip" download>Download source</a>
+        <a class="button secondary" href="index.html">Back to homepage</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section content-stack">
+    <article class="card">
+      <h2>Project overview</h2>
+      <p>
+        English Flashcards is a static web application built with plain HTML, CSS and JavaScript. It helps with vocabulary
+        practice by showing one word at a time, flipping the card to reveal the translation and storing custom words in
+        the browser.
+      </p>
+      <p>
+        The project focuses on practical frontend logic: state management without a framework, dynamic rendering,
+        responsive card layout and persistent data with localStorage.
+      </p>
+    </article>
+
+    <article class="card">
+      <h2>Key features</h2>
+      <div class="skill-cloud">
+        <span>Flip cards</span>
+        <span>Random word</span>
+        <span>Previous and next</span>
+        <span>Add cards</span>
+        <span>Edit cards</span>
+        <span>Delete cards</span>
+        <span>localStorage</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2>How to use it</h2>
+      <ol class="steps-list">
+        <li>Open the live demo using the button above.</li>
+        <li>Use the study view to flip cards, move between words or pick a random card.</li>
+        <li>Open the word editor to add, edit or delete your own flashcards.</li>
+        <li>Your changes are saved in the browser with localStorage.</li>
+      </ol>
+    </article>
+
+    <article class="card">
+      <h2>Tech stack</h2>
+      <p>
+        The app uses standalone HTML, CSS and JavaScript, so it does not require a build step or backend server. It can
+        run directly from the browser.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="projects/fiszki/index.html" target="_blank" rel="noopener">Open live demo</a>
+        <a class="button secondary" href="downloads/fiszki-source.zip" download>Download source ZIP</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 Dominik Chrzanowski. All rights reserved.
+  </footer>
+</body>
+</html>
