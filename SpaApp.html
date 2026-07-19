@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Event Manager SPA: a React and Vite single-page app by Dominik Chrzanowski.">
+  <link rel="stylesheet" href="style.css">
+  <title>Event Manager SPA | Dominik Chrzanowski</title>
+</head>
+<body>
+  <nav class="topbar" aria-label="Main navigation">
+    <a class="brand" href="index.html">DC</a>
+    <div class="nav-links">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero subpage-hero">
+    <div class="hero-copy">
+      <p class="eyebrow">React • Vite • JSON API</p>
+      <h1>Event Manager SPA</h1>
+      <p class="lead">
+        A single-page application for listing events, opening event details and adding new event records.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="downloads/spa-app-source.zip" download>Download source</a>
+        <a class="button secondary" href="index.html">Back to homepage</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section content-stack">
+    <article class="card">
+      <h2>Project overview</h2>
+      <p>
+        Event Manager SPA is a university project built as a React application with Vite and React Router. It communicates
+        with a local API, loads events from JSON data, displays event details and includes a form for adding new events.
+      </p>
+      <p>
+        The project shows a clean frontend flow: routing, API service separation, form validation and basic CRUD-style
+        interaction with a local JSON backend.
+      </p>
+    </article>
+
+    <article class="card">
+      <h2>Key features</h2>
+      <div class="skill-cloud">
+        <span>React components</span>
+        <span>Client-side routing</span>
+        <span>Event list</span>
+        <span>Event details</span>
+        <span>Add event form</span>
+        <span>Axios API service</span>
+        <span>JSON data</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2>How to run the app</h2>
+      <ol class="steps-list">
+        <li>Download and extract the source ZIP.</li>
+        <li>Open a terminal in the extracted project folder.</li>
+        <li>Run <strong>npm install</strong> to install dependencies.</li>
+        <li>Start the JSON API on port 3001 using <strong>npx json-server --watch db.json --port 3001</strong>.</li>
+        <li>In a second terminal, run <strong>npm run dev</strong> and open the local Vite address in your browser.</li>
+      </ol>
+      <p>
+        The frontend expects the API at <strong>http://localhost:3001</strong>, so the JSON server should keep running
+        while you test the app.
+      </p>
+    </article>
+
+    <article class="card">
+      <h2>Tech stack</h2>
+      <p>
+        The project uses React, Vite, React Router and Axios. Local test data is stored in <strong>db.json</strong> and
+        served through a JSON API during development.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="downloads/spa-app-source.zip" download>Download source ZIP</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 Dominik Chrzanowski. All rights reserved.
+  </footer>
+</body>
+</html>
